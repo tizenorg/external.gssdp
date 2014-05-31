@@ -1,0 +1,4 @@
+usr/include/gssdp-1.0/*
+usr/lib/*.{a,so}
+usr/lib/pkgconfig/*
+#usr/share/gir-1.0/GSSDP-1.0.gir
