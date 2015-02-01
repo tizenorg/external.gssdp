@@ -60,10 +60,3 @@ rm -rf %{buildroot}
 /usr/lib/*.so
 /usr/lib/pkgconfig/*
 
-
-%changelog
-* Fri Sep 21 2012 JaeYong Cho <jy4519.cho@samsung.com> 0.8.2
-* Append a manifest file for SMACK
-* Wed Feb 06 2012 JaeYong Cho <jy4519.cho@samsung.com> 0.8.2
-* Convert package from debian to rpm
-
