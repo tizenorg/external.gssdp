@@ -1,5 +1,5 @@
 Name: gssdp
-Version: 0.8.2_2
+Version: 0.8.2_3
 Release: 1
 Summary: GSSDP
 Group: <group>/<group>
@@ -11,7 +11,7 @@ Patch2: fixed_netmask_filter_bug.patch
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:  autoconf >= 2.67
-Requires: ldconfig
+Requires: /sbin/ldconfig
 %description
 A GObject-based API for handling resource discovery and announcement over SSDP.
 
