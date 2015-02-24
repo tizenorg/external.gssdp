@@ -1,5 +1,5 @@
 Name: gssdp
-Version: 0.8.2_3
+Version: 0.8.2_4
 Release: 1
 Summary: GSSDP
 Group: <group>/<group>
@@ -50,13 +50,13 @@ rm -rf %{buildroot}
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
 %doc
-/usr/lib/*.so.*
+%{_libdir}/*.so*
 /usr/share/license/%{name}
 
 %files devel
 %defattr(-,root,root,-)
 /usr/include/gssdp-1.0/*
-#/usr/lib/*.a
-/usr/lib/*.so
-/usr/lib/pkgconfig/*
+#%{_libdir}/*.a
+%{_libdir}/*.so*
+%{_libdir}/pkgconfig/*
 
