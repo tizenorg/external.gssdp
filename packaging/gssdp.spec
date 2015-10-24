@@ -11,7 +11,6 @@ Patch2: fixed_netmask_filter_bug.patch
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:  autoconf >= 2.67
-Requires: ldconfig
 %description
 A GObject-based API for handling resource discovery and announcement over SSDP.
 
@@ -23,12 +22,12 @@ Requires:   %{name} = %{version}-%{release}
 %description devel
 A GObject-based API for handling resource discovery and announcement over SSDP.
 
-%prep  
-%setup -q  
-%patch1 -p1 
+%prep
+%setup -q
+%patch1 -p1
 %patch2 -p1
 
-%build  
+%build
 %configure --prefix=/usr --enable-introspection=no --enable-gtk-doc-html=no
   
 make %{?jobs:-j%jobs}  
